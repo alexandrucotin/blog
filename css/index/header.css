@@ -1,0 +1,33 @@
+/* header */
+
+.header {
+  grid-area: header;
+  background-color: #ececec;
+}
+
+.header .header-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.header .header-container .header-title {
+  color: #222831;
+}
+
+.header .header-container .header-description {
+  font-size: 0.8rem;
+  color: #222831;
+}
+
+.header .header-container .header-description {
+  font-size: 0.9rem;
+  color: #222831;
+}
+
+.header .header-container .header-description .header-description-span {
+  font-weight: bold;
+  color: #30475e;
+}

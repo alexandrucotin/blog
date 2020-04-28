@@ -1,0 +1,96 @@
+html,
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-areas:
+    "navbar"
+    "header"
+    "header"
+    "latest"
+    "latest"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "footer";
+}
+
+/* navbar */
+
+.navbar {
+  grid-area: navbar;
+  background-color: #222831;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-container {
+  width: 100%;
+  display: flex;
+  padding-left: 2rem;
+}
+
+.navbar .navbar-container .link-item {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ececec;
+  margin-right: 1.5rem;
+}
+
+
+
+
+
+@media (min-width: 901px) {
+  .container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas:
+      "navbar navbar navbar navbar navbar navbar navbar navbar"
+      "header header header header header header header header"
+      "header header header header header header header header"
+      "header header header header header header header header"
+      "latest latest main main main main main main"
+      "latest latest main main main main main main"
+      "latest latest main main main main main main"
+      "latest latest main main main main main main"
+      "latest latest main main main main main main"
+      "latest latest main main main main main main"
+      "footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer";
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+  .container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas:
+      "navbar navbar navbar navbar"
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      "latest main main main"
+      "latest main main main"
+      "latest main main main"
+      "latest main main main"
+      "latest main main main"
+      "latest main main main"
+      "footer footer footer footer"
+      "footer footer footer footer";
+  }
+}
