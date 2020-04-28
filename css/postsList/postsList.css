@@ -2,13 +2,22 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 3fr 1fr;
+  grid-template-rows: repeat(12, 1fr);
   grid-template-areas:
     "navbar"
     "header"
+    "header"
+    "list"
+    "list"
+    "list"
+    "list"
+    "list"
+    "list"
+    "list"
     "list"
     "footer";
 }
+
 .posts-list {
   grid-area: list;
   padding: 2rem;
@@ -19,49 +28,53 @@
   flex-direction: column;
 }
 
-.posts-list-container {
-  display: flex;
-  flex-direction: column;
+.post-card{
+  padding: 2rem 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.single-img {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.img {
+  width: 100%;
+}
+
+.post-card-description{
+  font-size: 0.9rem;
+}
+
+.post-card-button {
+  font-size: 0.8rem;
+  padding: .4rem;
+  background-color: #f2a365;
+  border-radius: .5rem;
+  color: white;
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas:
-      "navbar navbar navbar navbar"
-      "header header header header"
-      "header header header header"
-      "header header header header"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "footer footer footer footer"
-      "footer footer footer footer";
+  .posts-list-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
+
+  .post-card{
+    width: 26%;
+  }
+  
 }
 
 @media (min-width: 901px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas:
-      "navbar navbar navbar navbar"
-      "header header header header"
-      "header header header header"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "footer footer footer footer"
-      "footer footer footer footer";
+  .posts-list-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .post-card{
+    width: 26%;
   }
 }

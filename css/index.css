@@ -6,6 +6,11 @@ body {
   overflow-x: hidden;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   width: 100vw;
   display: grid;
@@ -43,7 +48,6 @@ body {
 
 .link-item {
   font-weight: bold;
-  text-decoration: none;
   color: #ececec;
   margin-right: 1.5rem;
 }
