@@ -4,7 +4,7 @@
   grid-area: latest;
 }
 
-.latest-posts .latest-posts-container {
+.latest-posts-container {
   display: flex;
   padding: 0 2rem;
   flex-direction: column;
@@ -12,11 +12,11 @@
   justify-content: center;
 }
 
-.latest-posts .latest-posts-container .button-container {
-  padding: 1rem 0;
+.button-container {
+  padding: 2rem 0;
 }
 
-.latest-posts .latest-posts-container .button-container .button-posts {
+.button-posts {
   background-color: #30475e;
   text-decoration: none;
   color: white;
@@ -26,12 +26,12 @@
   border-radius: 0.3rem;
 }
 
-.latest-posts .latest-posts-container .posts-list {
+.posts-list {
   display: flex;
   justify-content: space-between;
 }
 
-.latest-posts .latest-posts-container .latest-posts-title {
+.latest-posts-title {
   border-bottom: 5px solid #f2a365;
   position: relative;
 }
@@ -45,34 +45,29 @@
   background-color: white;
 }
 
-.latest-posts
-  .latest-posts-container
-  .posts-list
-  .single-post-container
-  .post-title {
+.single-post-container {
+  width: 46%;
+}
+
+.post-title {
   font-weight: 600;
 }
 
-.latest-posts
-  .latest-posts-container
-  .posts-list
-  .single-post-container
-  .post-description {
+.post-description {
   font-size: 0.8rem;
 }
 
-@media (min-width: 600px) and (max-width: 900px){
-
+@media (min-width: 600px) and (max-width: 900px) {
   .latest-posts {
     margin-top: 4rem;
   }
 
-  .latest-posts .latest-posts-container {
+  .latest-posts-container {
     justify-content: unset;
     padding: 0 1rem 0 2rem;
   }
 
-  .latest-posts .latest-posts-container .posts-list {
+  .posts-list {
     display: flex;
     flex-direction: column;
   }
@@ -82,12 +77,12 @@
   .latest-posts {
     margin-top: 4rem;
   }
-  .latest-posts .latest-posts-container {
+  .latest-posts-container {
     justify-content: unset;
     padding: 0 1rem 0 2rem;
   }
 
-  .latest-posts .latest-posts-container .posts-list {
+  .posts-list {
     display: flex;
     flex-direction: column;
   }

@@ -4,7 +4,7 @@
   grid-area: footer;
 }
 
-.footer .footer-container {
+.footer-container {
   color: #ececec;
   display: flex;
   flex-direction: column;
@@ -14,55 +14,52 @@
   padding: 0 2rem;
 }
 
-.footer .footer-container .links {
+.links {
   display: flex;
   flex-direction: column;
 }
 
-.footer .footer-container .links .links-title {
+.links-title {
   font-size: 0.8rem;
   font-weight: bold;
   color: #f2a365;
 }
 
-.footer .footer-container .links .footer-link {
+.footer-link {
   text-decoration: none;
   color: #ececec;
   font-size: 0.6rem;
 }
 
-.footer .footer-container .created-by {
+.created-by {
   text-align: center;
   font-size: 0.7rem;
 }
 
-.footer .footer-container .created-by .bold {
-  font-weight: bold;
-}
-
 @media (min-width: 600px) and (max-width: 900px) {
-  .footer .footer-container .links .links-title {
+  .links-title {
     font-size: 1rem;
   }
 
-  .footer .footer-container .links .footer-link {
+  .footer-link {
     font-size: 0.7rem;
   }
-  .footer .footer-container .created-by {
+
+  .created-by {
     font-size: 0.8rem;
   }
 }
 
 @media (min-width: 901px) {
-  .footer .footer-container .links .links-title {
+  .links-title {
     font-size: 1rem;
   }
 
-  .footer .footer-container .links .footer-link {
+  .footer-link {
     font-size: 0.7rem;
   }
-  .footer .footer-container .created-by {
+
+  .created-by {
     font-size: 0.8rem;
   }
 }
-
