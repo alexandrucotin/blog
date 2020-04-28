@@ -10,15 +10,14 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="container">
-      <div class="navbar">
+  <body class="container">
+      <nav class="navbar">
         <div class="navbar-container">
           <a href="/" class="link-item">home</a>
           <a href="./pages/post.html" class="link-item">posts</a>
         </div>
-      </div>
-      <div class="header">
+      </nav>
+      <header class="header">
         <div class="header-container">
           <h1 class="header-title">Welcome!</h1>
           <p class="header-description">
@@ -30,8 +29,8 @@
             bottom page the <span class="header-description-span">footer</span>.
           </p>
         </div>
-      </div>
-      <div class="latest-posts">
+    </header>
+      <section class="latest-posts">
         <div class="latest-posts-container">
           <h3 class="latest-posts-title"><div class="mask-white"></div>Latests Posts</h3>
           <div class="posts-list">
@@ -48,10 +47,12 @@
               </p>
             </div>
           </div>
-          <a class="button" href="./pages/post.html">Posts</a>
+          <div class="button-container">
+            <a class="button-posts" href="./pages/post.html">Posts</a>
+          </div>
         </div>
-      </div>
-      <div class="main-content">
+      </section>
+      <section class="main-content">
         <div class="main-content-container">
           <h3 class="main-content-title"><div class="mask-grey"></div>About me</h3>
           <p class="main-content-description">
@@ -64,8 +65,16 @@
             <img src="./imgs/img.jpeg" alt="image in the about me section" />          
           
         </div>
-      </div>
-      <div class="footer">this is the footer</div>
-    </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="links">
+            <p class="links-title">Links to</p>
+            <a href="/">homepage</a>
+            <a href="/">posts</a>
+          </div>
+          <div class="created-by">created by <span class="bold">Alexandru Cotin</span></div>
+        </div>
+      </footer>
   </body>
 </html>
