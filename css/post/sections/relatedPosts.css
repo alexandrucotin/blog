@@ -1,0 +1,29 @@
+/* latest posts */
+
+.related-posts {
+  grid-area: related;
+  background-color: #ececec;
+}
+
+.related-posts-container {
+  display: flex;
+  padding: 0 2rem;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.read-more {
+  color: #30475e;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.post-title {
+  font-weight: 600;
+}
+
+.post-description {
+  font-size: 0.8rem;
+}
+

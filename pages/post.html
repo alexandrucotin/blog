@@ -7,15 +7,7 @@
   <title>Personal Blog Website</title>
 
   <!-- General styling -->
-  <link href="../css/index.css" rel="stylesheet" />
-  <!-- Header styling -->
-  <link href="../css/header.css" rel="stylesheet" />
-  <!-- Footer styling -->
-  <link href="../css/footer.css" rel="stylesheet" />
-  <!-- Post styling -->
-  <link href="../css/post/post.css" rel="stylesheet" />
-  <!-- Related posts styling -->
-  <link href="../css/post/relatedPosts.css" rel="stylesheet" />
+  <link href="../css/post/main.css" rel="stylesheet" />
 
   <!-- Font link-->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
@@ -26,7 +18,7 @@
   <nav class="navbar">
     <div class="navbar-container">
       <a href="/" class="link-item">home</a>
-      <a href="./pages/post.html" class="link-item">posts</a>
+      <a href="./postsList.html" class="link-item">posts</a>
     </div>
   </nav>
   <header class="header">
@@ -39,9 +31,12 @@
       <div class="social-links-container">
         <p class="social-title">share this post on</p>
         <div class="links-container">
-          <a href="https://www.twitter.com" class="social-links-item">twitter</a>
-          <a href="https://www.facebook.com" class="social-links-item">facebook</a>
-          <a href="https://www.linkedin.com" class="social-links-item">linkedin</a>
+          <a class="social-links-item" href="https://twitter.com/share?url=https://loving-bhaskara-7c183c.netlify.app/pages/post.html">
+            Twitter
+        </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://loving-bhaskara-7c183c.netlify.app/pages/post.html" class="social-links-item">facebook</a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loving-bhaskara-7c183c.netlify.app/pages/post.html&title=Photography&summary=blogpost&source=netlify
+          " class="social-links-item">linkedin</a>
         </div>
       </div>
     </div>
@@ -51,13 +46,13 @@
     <div class="main-content-container">
       <div class="main-section">
         <h2 class="post-title">What is photography</h2>
-        <p class="created-by-post">created on <b>29 Apr 2020</b></p>
-        <p class="post-description">
+        <p class="created-by-post-black">created on <b>29 Apr 2020</b></p>
+          <blockquote class="blockquote" cite="https://en.wikipedia.org/wiki/Photography">
           Photography is the art, application and practice of creating durable
           images by recording light or other electromagnetic radiation, either
           electronically by means of an image sensor, or chemically by means
           of a light-sensitive material such as photographic film.
-        </p>
+        </blockquote>
       </div>
       <div class="imgs-container">
         <div class="single-img">
@@ -152,14 +147,14 @@
         <div class="links-list">
           <p class="links-title">pages</p>
           <a class="footer-link" href="/">Homepage</a>
-          <a class="footer-link" href="./pages/postsList.html">Posts list</a>
+          <a class="footer-link" href="./postsList.html">Posts list</a>
         </div>
         <div class="links-list">
           <p class="links-title">posts</p>
-          <a class="footer-link" href="./pages/post.html">First post</a>
-          <a class="footer-link" href="./pages/postsList.html">Second post</a>
-          <a class="footer-link" href="./pages/postsList.html">Third post</a>
-          <a class="footer-link" href="./pages/postsList.html">Fourth post</a>
+          <a class="footer-link" href="./post.html">First post</a>
+          <a class="footer-link" href="./postsList.html">Second post</a>
+          <a class="footer-link" href="./postsList.html">Third post</a>
+          <a class="footer-link" href="./postsList.html">Fourth post</a>
         </div>
       </div>
       <div class="created-by">created by <b>Alexandru Cotin</b></div>

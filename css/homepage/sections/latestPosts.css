@@ -38,7 +38,6 @@
 
 .read-more {
   color: #30475e;
-  text-decoration: underline;
   font-weight: 500;
 }
 
@@ -61,50 +60,4 @@
 
 .post-description {
   font-size: 0.8rem;
-}
-
-@media (min-width: 600px) and (max-width: 900px) {
-  .latest-posts {
-    margin-top: 4rem;
-  }
-
-  .latest-posts-container {
-    justify-content: unset;
-    padding: 0 1rem 0 2rem;
-    height: auto;
-    position: sticky;
-    top: 4rem;
-  }
-
-  .posts-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .single-post-container {
-    width: 90%;
-  }
-}
-
-@media (min-width: 901px) {
-  .latest-posts {
-    margin-top: 4rem;
-  }
-
-  .latest-posts-container {
-    justify-content: unset;
-    padding: 0 1rem 0 2rem;
-    height: auto;
-    position: sticky;
-    top: 4rem;
-  }
-
-  .posts-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .single-post-container {
-    width: 80%;
-  }
 }
