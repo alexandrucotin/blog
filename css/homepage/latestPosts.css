@@ -36,6 +36,12 @@
   position: relative;
 }
 
+.read-more{
+  color: #30475e;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
 .mask-white {
   position: absolute;
   bottom: -6px;
@@ -65,11 +71,18 @@
   .latest-posts-container {
     justify-content: unset;
     padding: 0 1rem 0 2rem;
+    height: auto;
+    position: sticky;
+    top: 4rem;
   }
 
   .posts-list {
     display: flex;
     flex-direction: column;
+  }
+
+  .single-post-container{
+    width: 90%;
   }
 }
 
@@ -79,11 +92,18 @@
   }
   .latest-posts-container {
     justify-content: unset;
-    padding: 0 1rem 0 2rem;
+    padding: 0 1rem 0 2rem;  
+    height: auto;
+    position: sticky;
+    top: 4rem;
   }
 
   .posts-list {
     display: flex;
     flex-direction: column;
+  }
+
+  .single-post-container{
+    width: 80%;
   }
 }

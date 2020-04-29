@@ -16,11 +16,17 @@
 
 .links {
   display: flex;
+  justify-content: space-around;
+}
+
+.links-list {
+  text-align: center;
+  display: flex;
   flex-direction: column;
 }
 
 .links-title {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: bold;
   color: #f2a365;
 }
@@ -28,7 +34,8 @@
 .footer-link {
   text-decoration: none;
   color: #ececec;
-  font-size: 0.6rem;
+  margin: 0.1rem 0;
+  font-size: 0.7rem;
 }
 
 .created-by {
@@ -37,6 +44,9 @@
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
+  .links {
+    padding: 0.7rem;
+  }
   .links-title {
     font-size: 1rem;
   }
@@ -47,19 +57,25 @@
 
   .created-by {
     font-size: 0.8rem;
+    padding: 2rem;
   }
 }
 
 @media (min-width: 901px) {
+  .links {
+    padding: 0.7rem;
+  }
+  
   .links-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .footer-link {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .created-by {
     font-size: 0.8rem;
+    padding: 2rem;
   }
 }
