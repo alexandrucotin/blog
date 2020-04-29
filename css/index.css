@@ -14,18 +14,11 @@ a {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: 5rem 1fr 0.7fr 3fr  0.5fr;
   grid-template-areas:
     "navbar"
     "header"
     "latest"
-    "latest"
-    "main"
-    "main"
-    "main"
-    "main"
-    "main"
-    "main"
     "main"
     "footer";
 }
@@ -55,18 +48,10 @@ a {
   .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: 5rem 1fr 3fr  0.5fr;
     grid-template-areas:
       "navbar navbar navbar navbar"
       "header header header header"
-      "header header header header"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
       "latest main main main"
       "footer footer footer footer";
   }
@@ -79,18 +64,10 @@ a {
   .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: 5rem 1fr 3fr  0.5fr;
     grid-template-areas:
       "navbar navbar navbar navbar"
       "header header header header"
-      "header header header header"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
       "latest main main main"
       "footer footer footer footer";
   }

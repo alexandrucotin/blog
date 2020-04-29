@@ -7,15 +7,15 @@
   <title>Personal Blog Website</title>
 
   <!-- General styling -->
-  <link href="../css/post/post.css" rel="stylesheet" />
+  <link href="../css/index.css" rel="stylesheet" />
   <!-- Header styling -->
-  <link href="../css/index/header.css" rel="stylesheet" />
-  <!-- Latest Posts styling -->
-  <link href="../css/index/latestPosts.css" rel="stylesheet" />
-  <!-- Main content styling -->
-  <link href="../css/index/mainContent.css" rel="stylesheet" />
+  <link href="../css/header.css" rel="stylesheet" />
   <!-- Footer styling -->
-  <link href="../css/index/footer.css" rel="stylesheet" />
+  <link href="../css/footer.css" rel="stylesheet" />
+  <!-- Post styling -->
+  <link href="../css/post/post.css" rel="stylesheet" />
+  <!-- Related posts styling -->
+  <link href="../css/post/relatedPosts.css" rel="stylesheet" />
 
   <!-- Font link-->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
@@ -31,76 +31,138 @@
   </nav>
   <header class="header">
     <div class="header-container">
-      <h1 class="header-title">First post</h1>
-      <p class="created-by">created by <b>Alex</b></p>
+      <h1 class="header-title">About photography</h1>
+      <p class="created-by-post">created by <b>Alex</b></p>
       <p class="header-description">
-        In this page we have the first post of the blog. I will try to follow the structure from the rubrics.
+        In this we will talk about a topic that i love, photography!
       </p>
+      <div class="social-links-container">
+        <p class="social-title">share this post on</p>
+        <div class="links-container">
+          <a href="https://www.twitter.com" class="social-links-item">twitter</a>
+          <a href="https://www.facebook.com" class="social-links-item">facebook</a>
+          <a href="https://www.linkedin.com" class="social-links-item">linkedin</a>
+        </div>
+      </div>
     </div>
   </header>
-  <section class="latest-posts">
-    <div class="latest-posts-container">
-      <h3 class="latest-posts-title">
-        <div class="mask-white"></div>Latests Posts
-      </h3>
-      <div class="posts-list">
-        <div class="single-post-container">
-          <p class="post-title">Post 1</p>
-          <p class="post-description">
-            This is the description for the first post
-          </p>
-        </div>
-        <div class="single-post-container">
-          <p class="post-title">Post 2</p>
-          <p class="post-description">
-            This is the description for the second post
-          </p>
-        </div>
-      </div>
-      <div class="button-container">
-        <a class="button-posts" href="./pages/post.html">Posts</a>
-      </div>
-    </div>
-  </section>
+
   <section class="main-content">
     <div class="main-content-container">
-      <h3 class="main-content-title">
-        <div class="mask-grey"></div>About me
-      </h3>
-      <p class="main-content-description">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-        repellendus temporibus numquam harum.</br>
-        </br> Voluptates deleniti deserunt
-        perferendis ad est, omnis quidem fugit aut ea illo, ducimus dolor
-        magnam. Voluptatem, eveniet.
-      </p>
-      <h3 class="img-title">Some images</h3>
-      <p class="main-content-description">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-        repellendus temporibus numquam harum.
-      </p>
+      <div class="main-section">
+        <h2 class="post-title">What is photography</h2>
+        <p class="created-by-post">created on <b>29 Apr 2020</b></p>
+        <p class="post-description">
+          Photography is the art, application and practice of creating durable
+          images by recording light or other electromagnetic radiation, either
+          electronically by means of an image sensor, or chemically by means
+          of a light-sensitive material such as photographic film.
+        </p>
+      </div>
       <div class="imgs-container">
         <div class="single-img">
-          <img class="img" src="./imgs/img.jpg" alt="image in the about me section" />
+          <img src="../imgs/img.jpg" alt="" class="img" />
         </div>
         <div class="single-img">
-          <img class="img" src="./imgs/img2.jpg" alt="image in the about me section" />
-        </div>        
+          <img src="../imgs/img2.jpg" alt="" class="img" />
+        </div>
+        <div class="single-img">
+          <img src="../imgs/img3.jpg" alt="" class="img" />
+        </div>
+      </div>
+      <div class="main-section">
+        <h2 class="medium-title">Types of photography</h2>
+        <p class="post-title-description">
+          There are a lot of types a photographer can shoot. Down below i will
+          list some of them!
+        </p>
+        <div class="content">
+          <ul class="unorder-list">
+            <li class="list-element">
+              <h4 class="small-title">Amateur</h4>
+              <p class="paragraph">
+                Photography is the art, application and practice of creating
+                durable images by recording light or other electromagnetic
+                radiation, either electronically by means of an image sensor,
+                or chemically by means of a light-sensitive material such as
+                photographic film.
+              </p>
+            </li>
+            <li class="list-element">
+              <h4 class="small-title">Commercial</h4>
+              <p class="paragraph">
+                Photography is the art, application and practice of creating
+                durable images by recording light or other electromagnetic
+                radiation, either electronically by means of an image sensor,
+                or chemically by means of a light-sensitive material such as
+                photographic film.
+              </p>
+            </li>
+            <li class="list-element">
+              <h4 class="small-title">Art</h4>
+              <p class="paragraph">
+                Photography is the art, application and practice of creating
+                durable images by recording light or other electromagnetic
+                radiation, either electronically by means of an image sensor,
+                or chemically by means of a light-sensitive material such as
+                photographic film.
+              </p>
+            </li>
+            <li class="list-element">
+              <h4 class="small-title">Photojournalism</h4>
+              <p class="paragraph">
+                Photography is the art, application and practice of creating
+                durable images by recording light or other electromagnetic
+                radiation, either electronically by means of an image sensor,
+                or chemically by means of a light-sensitive material such as
+                photographic film.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
+  <section class="related-posts">
+    <div class="related-posts-container">
+      <h3 class="related-posts-title">Related Posts</h3>
+      <div class="posts">
+        <div class="single-post-container">
+          <p class="post-title">First post</p>
+          <p class="post-description">
+            This is the description for the first post
+            <a class="read-more" href="./pages/post.html">...read more</a>
+          </p>
+        </div>
+        <div class="single-post-container">
+          <p class="post-title">Second post</p>
+          <p class="post-description">
+            This is the description for the second post
+            <a class="read-more" href="./pages/post.html">...read more</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="footer-container">
       <div class="links">
-        <p class="links-title">Links to</p>
-        <a class="footer-link" href="/">homepage</a>
-        <a class="footer-link" href="/pages/post.html">posts</a>
+        <div class="links-list">
+          <p class="links-title">pages</p>
+          <a class="footer-link" href="/">Homepage</a>
+          <a class="footer-link" href="./pages/postsList.html">Posts list</a>
+        </div>
+        <div class="links-list">
+          <p class="links-title">posts</p>
+          <a class="footer-link" href="./pages/post.html">First post</a>
+          <a class="footer-link" href="./pages/postsList.html">Second post</a>
+          <a class="footer-link" href="./pages/postsList.html">Third post</a>
+          <a class="footer-link" href="./pages/postsList.html">Fourth post</a>
+        </div>
       </div>
-      <div class="created-by">
-        created by <b>Alexandru Cotin</b>
-      </div>
+      <div class="created-by">created by <b>Alexandru Cotin</b></div>
     </div>
   </footer>
 </body>

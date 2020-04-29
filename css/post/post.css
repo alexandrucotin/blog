@@ -1,96 +1,164 @@
-html,
-body {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-}
-
 .container {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: 5rem 1fr 3fr 0.7fr 0.5fr;
   grid-template-areas:
     "navbar"
     "header"
-    "header"
-    "latest"
-    "latest"
     "main"
-    "main"
-    "main"
-    "main"
-    "main"
-    "main"
+    "related"
     "footer";
 }
 
-/* navbar */
+/* header */
 
-.navbar {
-  grid-area: navbar;
-  background-color: #222831;
-  display: flex;
-  align-items: center;
+.header {
+  background-image: url("../../imgs/img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.navbar .navbar-container {
+.header-container {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-title {
+  margin: 0;
+  color: white;
+}
+
+.created-by-post {
+  text-align: unset;
+  margin: 0;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.header-description {
+  margin: 2rem 0 0 0;
+  font-weight: 500;
+  color: white;
+}
+
+.social-links-container {
+  margin-top: 2rem;
+}
+.social-title {
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  margin: 1rem 0 0 0;
+}
+
+.social-links-item {
+  color: white;
+  font-size: 0.7rem;
+  text-decoration: underline;
+}
+
+/* main */
+
+.main-content {
+  grid-area: main;
+  padding: 2rem 2rem;
+}
+
+.main-section {
+  padding: 2rem 0;
+}
+.post-title {
+  margin: 1rem 0 0 0;
+}
+
+.post-description {
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+.small-title {
+  margin: 1rem 0 0 0;
+}
+
+.medium-title {
+  margin: 1rem 0 0 0;
+}
+
+.paragraph {
+  font-size: 0.9rem;
+}
+
+/* images */
+
+.imgs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-img {
   width: 100%;
-  display: flex;
-  padding-left: 2rem;
+  padding: 0.5rem 0;
 }
 
-.navbar .navbar-container .link-item {
-  font-weight: bold;
-  text-decoration: none;
-  color: #ececec;
-  margin-right: 1.5rem;
+.img {
+  width: 100%;
 }
 
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 3fr 1fr 0.5fr;
+    grid-template-areas:
+      "navbar"
+      "header"
+      "main"
+      "related"
+      "footer";
+  }
 
-
-
+  .imgs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .single-img {
+    width: 49%;
+  }
+}
 
 @media (min-width: 901px) {
   .container {
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1.5fr 3fr 1fr 0.5fr;
     grid-template-areas:
-      "navbar navbar navbar navbar navbar navbar navbar navbar"
-      "header header header header header header header header"
-      "header header header header header header header header"
-      "header header header header header header header header"
-      "latest latest main main main main main main"
-      "latest latest main main main main main main"
-      "latest latest main main main main main main"
-      "latest latest main main main main main main"
-      "latest latest main main main main main main"
-      "latest latest main main main main main main"
-      "footer footer footer footer footer footer footer footer"
-      "footer footer footer footer footer footer footer footer";
+      "navbar"
+      "header"
+      "main"
+      "related"
+      "footer";
   }
-}
 
-@media (min-width: 600px) and (max-width: 900px){
-  .container {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas:
-      "navbar navbar navbar navbar"
-      "header header header header"
-      "header header header header"
-      "header header header header"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "latest main main main"
-      "footer footer footer footer"
-      "footer footer footer footer";
+  .imgs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .single-img {
+    width: 33%;
+  }
+
+  .unorder-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .list-element {
+    width: 30%;
   }
 }

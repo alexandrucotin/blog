@@ -2,18 +2,10 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: 5rem 1fr 3fr 0.5fr;
   grid-template-areas:
     "navbar"
     "header"
-    "header"
-    "list"
-    "list"
-    "list"
-    "list"
-    "list"
-    "list"
-    "list"
     "list"
     "footer";
 }
@@ -28,7 +20,7 @@
   flex-direction: column;
 }
 
-.post-card{
+.post-card {
   padding: 2rem 0;
   border-bottom: 1px solid lightgrey;
 }
@@ -42,15 +34,15 @@
   width: 100%;
 }
 
-.post-card-description{
+.post-card-description {
   font-size: 0.9rem;
 }
 
 .post-card-button {
   font-size: 0.8rem;
-  padding: .4rem;
+  padding: 0.4rem;
   background-color: #f2a365;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: white;
 }
 
@@ -61,10 +53,9 @@
     flex-wrap: wrap;
   }
 
-  .post-card{
+  .post-card {
     width: 26%;
   }
-  
 }
 
 @media (min-width: 901px) {
@@ -74,7 +65,7 @@
     flex-wrap: wrap;
   }
 
-  .post-card{
+  .post-card {
     width: 26%;
   }
 }
